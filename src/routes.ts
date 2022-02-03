@@ -33,7 +33,7 @@ router.get("/users/compliments/receive",ensureAuthenticated ,listUserReceiveComp
 
 router.get("/tags",ensureAuthenticated, listTagsController.handle )
 
-router.get("/users", ensureAuthenticated, listUsersController.handle )
+router.get("/users/all", ensureAuthenticated, listUsersController.handle )
 
 
 export { router }
